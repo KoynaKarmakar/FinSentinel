@@ -1,0 +1,38 @@
+{
+  "Structuring": {
+    "account_id": "C1001",
+    "amount_inr": 985000,
+    "velocity_24h": 1,
+    "account_age_days": 420,
+    "is_cross_border": false,
+    "description": "Amount just below \u20b910L RBI reporting threshold \u2014 classic structuring signal",
+    "expected_tier": "HIGH"
+  },
+  "Fan-out smurfing": {
+    "account_id": "C1002",
+    "amount_inr": 4500000,
+    "velocity_24h": 7,
+    "account_age_days": 12,
+    "is_cross_border": false,
+    "description": "One source to 7 destinations, new account, large amount \u2014 fan-out pattern",
+    "expected_tier": "CRITICAL"
+  },
+  "Cross-border layering": {
+    "account_id": "C1003",
+    "amount_inr": 2200000,
+    "velocity_24h": 3,
+    "account_age_days": 8,
+    "is_cross_border": true,
+    "description": "Cross-border transfer from a new account with large amount \u2014 layering pattern",
+    "expected_tier": "HIGH"
+  },
+  "Legitimate transfer": {
+    "account_id": "C1004",
+    "amount_inr": 1800000,
+    "velocity_24h": 1,
+    "account_age_days": 847,
+    "is_cross_border": false,
+    "description": "Established account, single domestic transaction \u2014 salary disbursement pattern",
+    "expected_tier": "LOW"
+  }
+}

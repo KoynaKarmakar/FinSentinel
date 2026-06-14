@@ -1,0 +1,35 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Generated artifacts
+data/bm25.pkl
+finsentinel.db
+test_finsentinel.db
+*.db
+
+# Model cache
+.cache/
+sentence_transformers/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Dist
+dist/
+build/
+*.egg-info/
